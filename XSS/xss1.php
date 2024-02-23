@@ -8,3 +8,11 @@ if (strpos($name, "\"")) {
     echo $str;
 }
 ?>
+
+<!-- 
+payload:
+
+name=alert(1)\&age=-alert(1)//
+name=alert(1)\&age=;alert(1)//
+
+\注释掉",后面闭合 然后注释  弹窗 -->
