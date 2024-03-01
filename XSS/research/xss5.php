@@ -1,0 +1,1 @@
+<a href="javascript:alert(1)" target="_blank">aaa</a>
