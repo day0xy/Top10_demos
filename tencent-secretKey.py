@@ -7,8 +7,8 @@ import logging
 # https://www.tencentcloud.com/zh/document/product/1045/48105?lang=zh&pg=
 
 logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-secret_key = 'EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ'
-secret_id = 'AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP'
+secret_key = ''
+secret_id = ''
 region = ''
 token = None
 scheme = 'https'
