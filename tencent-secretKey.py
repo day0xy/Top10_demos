@@ -7,10 +7,10 @@ import logging
 # https://www.tencentcloud.com/zh/document/product/1045/48105?lang=zh&pg=
 
 logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-secret_key = ''
-secret_id = ''
+secret_key = 'EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ'
+secret_id = 'AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP'
 region = ''
-token = ''
+token = None
 scheme = 'https'
 
 config = CosConfig(Region=region, SecretId=secret_id,
